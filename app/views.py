@@ -3,7 +3,7 @@ from django.http.request import HttpRequest
 
 
 def hey_view(request: HttpRequest, name: str) -> HttpResponse:
-    return HttpResponse(f"Hey, {name}!")
+    return HttpResponse(f"Hey, {name.upper()}!")
 
 
 def age_in_view(request: HttpRequest, end: int, birthyear: int) -> HttpResponse:
